@@ -18,5 +18,7 @@ lonui=np.argmin( np.abs( lons - lonbounds[1]))
 VariableRunoffsubset=GlobRunoff.variables['Runoff'][ 1 , latli:latui , lonli:lonui ]
 print (VariableRunoffsubset)
 image=matplotlib.pyplot.imshow(VariableRunoffsubset)
+matplotlib.pyplot.title("Runoff for a catchment")
+matplotlib.pyplot.colorbar()
 matplotlib.pyplot.show()
 
